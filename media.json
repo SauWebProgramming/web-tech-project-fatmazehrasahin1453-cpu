@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Inception",
+    "type": "film",
+    "year": 2010,
+    "category": "Bilim Kurgu",
+    "rating": 8.8,
+    "description": "Rüya içinde rüya mantığını işleyen etkileyici bir bilim kurgu filmi.",
+    "poster": "https://image.tmdb.org/t/p/w500/qmDpIHrmpJINaRKAfWQfftjCdyi.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Breaking Bad",
+    "type": "dizi",
+    "year": 2008,
+    "category": "Drama",
+    "rating": 9.5,
+    "description": "Kimya öğretmeni Walter White'ın suç dünyasına girişini anlatan efsane dizi.",
+    "poster": "https://image.tmdb.org/t/p/w500/ggFHVNu6YYI5L9pCfOacjizRGt.jpg"
+  },
+  {
+    "id": 3,
+    "title": "1984",
+    "type": "kitap",
+    "year": 1949,
+    "category": "Distopya",
+    "rating": 9.0,
+    "description": "George Orwell'in totaliter bir rejim altındaki toplumu anlattığı distopik romanı.",
+    "poster": "https://images-na.ssl-images-amazon.com/images/I/41AX2PVaO-L._SX324_.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Interstellar",
+    "type": "film",
+    "year": 2014,
+    "category": "Bilim Kurgu",
+    "rating": 8.6,
+    "description": "İnsanlığın hayatta kalma mücadelesini uzay ve zaman üzerinden anlatan epik bir film.",
+    "poster": "https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg"
+  },
+  {
+    "id": 5,
+    "title": "The Queen's Gambit",
+    "type": "dizi",
+    "year": 2020,
+    "category": "Drama",
+    "rating": 8.6,
+    "description": "Satranç dahisi Beth Harmon'un yükselişini ve içsel mücadelesini konu alan mini dizi.",
+    "poster": "https://image.tmdb.org/t/p/w500/zU0htwkhNvBQdVSIKB9s6hgVeFK.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Suç ve Ceza",
+    "type": "kitap",
+    "year": 1866,
+    "category": "Klasik",
+    "rating": 9.1,
+    "description": "Dostoyevski'nin ahlak, vicdan ve suç kavramlarını irdelediği klasık romanı.",
+    "poster": "https://images-na.ssl-images-amazon.com/images/I/51G35u1FuzL._SX331_BO1,204,203,200_.jpg"
+  }
+]

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>İnteraktif Medya Kitaplığı</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="top-nav">
+      <div class="logo">
+        <span>🎬 Medya Kitaplığım</span>
+      </div>
+
+      <div class="filters">
+        <!-- İSİM ARAMA -->
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="İsme göre ara..." 
+          aria-label="İsme göre ara"
+        />
+
+        <!-- TÜR FİLTRESİ -->
+        <select id="typeFilter" aria-label="Tür filtresi">
+          <option value="all">Tümü</option>
+          <option value="film">Filmler</option>
+          <option value="dizi">Diziler</option>
+          <option value="kitap">Kitaplar</option>
+        </select>
+
+        <!-- YIL FİLTRESİ -->
+        <select id="yearFilter" aria-label="Yıla göre filtre">
+          <option value="all">Tüm Yıllar</option>
+          <option value="2020">2020 ve sonrası</option>
+          <option value="2010">2010 ve sonrası</option>
+          <option value="2000">2000 ve sonrası</option>
+        </select>
+
+        <!-- 🔄 FİLTRELERİ SIFIRLA BUTONU (YENİ) -->
+        <button id="resetFilters">
+          🔄 Filtreleri Sıfırla
+        </button>
+
+        <!-- ⭐ FAVORİLER → VAR OLAN BUTON -->
+        <button id="favoritesToggle" class="secondary-btn">
+          ⭐ Favorilerim
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="mediaSection">
+      <h1>Tüm Medyalar</h1>
+      <div id="mediaList" class="media-grid">
+        <!-- Kartlar JS ile doldurulacak -->
+      </div>
+    </section>
+
+    <aside id="detailPanel">
+      <h2>Detaylar</h2>
+      <p>Bir karta tıklayınca burada detaylar görünecek.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>İnteraktif Medya Kitaplığı · Web Teknolojileri Projesi</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

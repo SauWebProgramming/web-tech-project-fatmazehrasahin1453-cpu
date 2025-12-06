@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f172a;
+  color: #e5e7eb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #111827;
+  border-bottom: 1px solid #1f2937;
+}
+
+.top-nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo span {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filters input,
+.filters select,
+.filters button {
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.5rem;
+  border: 1px solid #374151;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.filters button.secondary-btn {
+  border-color: #fbbf24;
+}
+
+main {
+  max-width: 1200px;
+  margin: 1rem auto;
+  padding: 0 1rem 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+}
+
+.media-card {
+  background: #020617;
+  border-radius: 0.75rem;
+  border: 1px solid #1f2937;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.media-card:hover {
+  transform: translateY(-2px);
+  border-color: #38bdf8;
+}
+
+.media-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.media-card-body {
+  padding: 0.6rem;
+}
+
+.media-card-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.media-card-meta {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.2rem;
+}
+
+.badge {
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+  border: 1px solid #4b5563;
+  font-size: 0.7rem;
+}
+
+.favorite-btn {
+  padding: 0.3rem 0.5rem;
+  margin-top: 0.4rem;
+  background: transparent;
+  border: 1px solid #4b5563;
+  color: #e5e7eb;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.favorite-btn.is-favorite {
+  color: #fbbf24;
+  border-color: #fbbf24;
+}
+
+#detailPanel {
+  background: #020617;
+  border-radius: 0.75rem;
+  border: 1px solid #1f2937;
+  padding: 1rem;
+}
+
+footer {
+  text-align: center;
+  color: #9ca3af;
+  padding: 1rem;
+  margin-top: auto;
+}
