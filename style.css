@@ -50,6 +50,20 @@ header {
   color: #e5e7eb;
 }
 
+/* BONUS: butonlara yumuşak geçiş */
+.filters button,
+.favorite-btn {
+  transition: background-color 0.2s ease,
+              color 0.2s ease,
+              border-color 0.2s ease,
+              transform 0.15s ease;
+}
+
+.filters button:hover {
+  transform: translateY(-1px);
+  border-color: #38bdf8;
+}
+
 .filters button.secondary-btn {
   border-color: #fbbf24;
 }
@@ -75,12 +89,23 @@ main {
   border: 1px solid #1f2937;
   overflow: hidden;
   cursor: pointer;
-  transition: 0.2s;
+  /* BONUS: animasyonlu kart geçişi */
+  transition: transform 0.2s ease,
+              border-color 0.2s ease,
+              box-shadow 0.2s ease;
 }
 
+/* BONUS: hover animasyonu daha belirgin */
 .media-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-4px) scale(1.02);
   border-color: #38bdf8;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* BONUS: klavye odak (A11y) */
+.media-card:focus {
+  outline: 2px solid #38bdf8;
+  outline-offset: 2px;
 }
 
 .media-card img {
@@ -123,16 +148,54 @@ main {
   cursor: pointer;
 }
 
+.favorite-btn:hover {
+  transform: translateY(-1px);
+  border-color: #facc15;
+}
+
 .favorite-btn.is-favorite {
   color: #fbbf24;
   border-color: #fbbf24;
 }
 
+/* Detay paneli */
 #detailPanel {
   background: #020617;
   border-radius: 0.75rem;
   border: 1px solid #1f2937;
   padding: 1rem;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* Yeni: detay içeriği görsel + yazı yan yana */
+.detail-content {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.detail-poster {
+  width: 140px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  border: 1px solid #1f2937;
+  flex-shrink: 0;
+}
+
+.detail-text h2 {
+  margin-bottom: 0.5rem;
+}
+
+.detail-meta {
+  margin-bottom: 0.6rem;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+#detailPanel p {
+  margin-bottom: 0.4rem;
 }
 
 footer {
@@ -140,4 +203,50 @@ footer {
   color: #9ca3af;
   padding: 1rem;
   margin-top: auto;
+}
+
+/* 📱 Mobil uyum (tablet/telefon) */
+@media (max-width: 900px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  #mediaSection {
+    order: 1;
+  }
+
+  #detailPanel {
+    order: 2;
+    margin-top: 1rem;
+    max-height: none;
+  }
+
+  .detail-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .detail-poster {
+    width: 60%;
+    max-width: 220px;
+    height: auto;
+  }
+
+  .detail-text {
+    width: 100%;
+  }
+  /* Mobil dokunma efekti (desktop hover'ını bozmaz) */
+@media (hover: none) and (pointer: coarse) {
+  .media-card:active {
+    transform: scale(0.97);
+    border-color: #38bdf8;
+    opacity: 0.9;
+  }
+
+  .favorite-btn:active {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+}
 }

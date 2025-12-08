@@ -50,13 +50,19 @@ const getFilteredMedia = () => {
     if (showingFavoritesOnly && !favoriteIds.includes(item.id)) return false;
 
     // İsim araması
-    if (searchText && !item.title.toLowerCase().includes(searchText)) return false;
+    if (searchText && !item.title.toLowerCase().includes(searchText)) {
+      return false;
+    }
 
     // Tür filtresi
-    if (typeValue !== "all" && item.type !== typeValue) return false;
+    if (typeValue !== "all" && item.type !== typeValue) {
+      return false;
+    }
 
-    // Yıl filtresi
-    if (yearValue !== "all" && item.year < Number(yearValue)) return false;
+    // Yıl filtresi (2000 ve sonrası, 2010 ve sonrası, 2020 ve sonrası)
+    if (yearValue !== "all" && item.year < Number(yearValue)) {
+      return false;
+    }
 
     return true;
   });
@@ -78,6 +84,11 @@ const renderMediaList = () => {
     const card = document.createElement("article");
     card.className = "media-card";
 
+    // BONUS A11y: kartı buton gibi erişilebilir yap
+    card.setAttribute("role", "button");
+    card.setAttribute("tabindex", "0");
+    card.setAttribute("aria-label", `${item.title} detayını aç`);
+
     card.innerHTML = `
       <img src="${item.poster}" alt="${item.title}" onerror="this.src='';" />
       <div class="media-card-body">
@@ -93,7 +104,11 @@ const renderMediaList = () => {
         <button class="favorite-btn ${
           favoriteIds.includes(item.id) ? "is-favorite" : ""
         }" data-id="${item.id}">
-          ${favoriteIds.includes(item.id) ? "Favoriden Çıkar" : "Favorilere Ekle"}
+          ${
+            favoriteIds.includes(item.id)
+              ? "Favoriden Çıkar"
+              : "Favorilere Ekle"
+          }
         </button>
       </div>
     `;
@@ -103,6 +118,14 @@ const renderMediaList = () => {
       // Favori butonuna tıklandıysa detay tetiklenmesin
       if (e.target.classList.contains("favorite-btn")) return;
       renderDetail(item);
+    });
+
+    // BONUS A11y: klavye ile Enter veya Space basınca da detay aç
+    card.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        renderDetail(item);
+      }
     });
 
     // Favori butonu tıklaması
@@ -119,10 +142,31 @@ const renderMediaList = () => {
 // Sağdaki detay panelini güncelle
 const renderDetail = (item) => {
   detailPanelEl.innerHTML = `
-    <h2>${item.title}</h2>
-    <p>${item.year} · ${item.type} · ${item.category} · ⭐ ${item.rating}</p>
-    <p>${item.description}</p>
+    <div class="detail-content">
+      <img 
+        src="${item.poster}" 
+        alt="${item.title}" 
+        class="detail-poster"
+        onerror="this.style.display='none';"
+      />
+      <div class="detail-text">
+        <h2>${item.title}</h2>
+        <p class="detail-meta">
+          ${item.year} · ${item.type} · ${item.category} · ⭐ ${item.rating}
+        </p>
+        <p>${item.description}</p>
+      </div>
+    </div>
   `;
+
+  // Detay panelinin iç kaydırmasını en yukarı al
+  detailPanelEl.scrollTop = 0;
+
+  // BONUS: Detay panelini görünür alana getir (başlığı yukarıdan görebil)
+  detailPanelEl.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
 };
 
 // Favori ekle / çıkar
@@ -142,17 +186,17 @@ const toggleFavorite = (id) => {
 
 // --- EVENT LISTENER'LAR ---
 
-// İsimle arama (eski mantık: arama + filtre birlikte çalışır)
+// İsimle arama
 searchInputEl.addEventListener("input", () => {
   renderMediaList();
 });
 
-// Tür filtresi değişince sadece tür filtresi güncellenir
+// Tür filtresi
 typeFilterEl.addEventListener("change", () => {
   renderMediaList();
 });
 
-// Yıl filtresi değişince sadece yıl filtresi güncellenir
+// Yıl filtresi
 yearFilterEl.addEventListener("change", () => {
   renderMediaList();
 });
@@ -166,18 +210,13 @@ favoritesToggleEl.addEventListener("click", () => {
   renderMediaList();
 });
 
-// YENİ: Filtreleri Sıfırla butonu
+// Filtreleri Sıfırla butonu
 resetFiltersEl.addEventListener("click", () => {
-  // Arama kutusunu temizle
   searchInputEl.value = "";
-  // Tür filtresini sıfırla
   typeFilterEl.value = "all";
-  // Yıl filtresini sıfırla
   yearFilterEl.value = "all";
-  // Favori modunu kapat
   showingFavoritesOnly = false;
   favoritesToggleEl.textContent = "⭐ Favorilerim";
-  // Listeyi başa döndür
   renderMediaList();
 });
 
