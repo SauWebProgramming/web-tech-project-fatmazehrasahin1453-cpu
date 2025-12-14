@@ -26,9 +26,7 @@ const setFavoriteIds = (ids) => {
 const loadMediaData = async () => {
   try {
     const res = await fetch("media.json");
-    if (!res.ok) {
-      throw new Error("JSON dosyası yüklenemedi");
-    }
+    if (!res.ok) throw new Error("JSON dosyası yüklenemedi");
     const data = await res.json();
     allMedia = data;
     renderMediaList();
@@ -50,19 +48,13 @@ const getFilteredMedia = () => {
     if (showingFavoritesOnly && !favoriteIds.includes(item.id)) return false;
 
     // İsim araması
-    if (searchText && !item.title.toLowerCase().includes(searchText)) {
-      return false;
-    }
+    if (searchText && !item.title.toLowerCase().includes(searchText)) return false;
 
     // Tür filtresi
-    if (typeValue !== "all" && item.type !== typeValue) {
-      return false;
-    }
+    if (typeValue !== "all" && item.type !== typeValue) return false;
 
     // Yıl filtresi (2000 ve sonrası, 2010 ve sonrası, 2020 ve sonrası)
-    if (yearValue !== "all" && item.year < Number(yearValue)) {
-      return false;
-    }
+    if (yearValue !== "all" && item.year < Number(yearValue)) return false;
 
     return true;
   });
@@ -90,7 +82,7 @@ const renderMediaList = () => {
     card.setAttribute("aria-label", `${item.title} detayını aç`);
 
     card.innerHTML = `
-      <img src="${item.poster}" alt="${item.title}" onerror="this.src='';" />
+      <img src="${item.poster}" alt="${item.title}" onerror="this.style.display='none';" />
       <div class="media-card-body">
         <div class="media-card-title">${item.title}</div>
         <div class="media-card-meta">
@@ -104,11 +96,7 @@ const renderMediaList = () => {
         <button class="favorite-btn ${
           favoriteIds.includes(item.id) ? "is-favorite" : ""
         }" data-id="${item.id}">
-          ${
-            favoriteIds.includes(item.id)
-              ? "Favoriden Çıkar"
-              : "Favorilere Ekle"
-          }
+          ${favoriteIds.includes(item.id) ? "Favoriden Çıkar" : "Favorilere Ekle"}
         </button>
       </div>
     `;
@@ -139,8 +127,18 @@ const renderMediaList = () => {
   });
 };
 
-// Sağdaki detay panelini güncelle
+// Sağdaki detay panelini güncelle (YENİ: cast + author)
 const renderDetail = (item) => {
+  const castHtml =
+    Array.isArray(item.cast) && item.cast.length
+      ? `<p><strong>Başroller:</strong> ${item.cast.join(", ")}</p>`
+      : "";
+
+  const authorHtml =
+    item.type === "kitap" && item.author
+      ? `<p><strong>Yazar:</strong> ${item.author}</p>`
+      : "";
+
   detailPanelEl.innerHTML = `
     <div class="detail-content">
       <img 
@@ -154,6 +152,8 @@ const renderDetail = (item) => {
         <p class="detail-meta">
           ${item.year} · ${item.type} · ${item.category} · ⭐ ${item.rating}
         </p>
+        ${authorHtml}
+        ${castHtml}
         <p>${item.description}</p>
       </div>
     </div>
@@ -162,7 +162,7 @@ const renderDetail = (item) => {
   // Detay panelinin iç kaydırmasını en yukarı al
   detailPanelEl.scrollTop = 0;
 
-  // BONUS: Detay panelini görünür alana getir (başlığı yukarıdan görebil)
+  // Detay panelini görünür alana getir
   detailPanelEl.scrollIntoView({
     behavior: "smooth",
     block: "start"
@@ -174,11 +174,8 @@ const toggleFavorite = (id) => {
   const favoriteIds = getFavoriteIds();
   const index = favoriteIds.indexOf(id);
 
-  if (index === -1) {
-    favoriteIds.push(id);
-  } else {
-    favoriteIds.splice(index, 1);
-  }
+  if (index === -1) favoriteIds.push(id);
+  else favoriteIds.splice(index, 1);
 
   setFavoriteIds(favoriteIds);
   renderMediaList();

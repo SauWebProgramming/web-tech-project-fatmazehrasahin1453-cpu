@@ -1,14 +1,15 @@
 [
   {
-  "id": 1,
-  "title": "The Truman Show",
-  "type": "film",
-  "year": 1998,
-  "category": "Drama",
-  "rating": 8.2,
-  "description": "Tüm hayatının aslında bir TV şovu olduğunu fark eden Truman Burbank'in gerçekliği sorguladığı unutulmaz film.",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/c/cd/Trumanshow.jpg"
-},
+    "id": 1,
+    "title": "The Truman Show",
+    "type": "film",
+    "year": 1998,
+    "category": "Drama",
+    "rating": 8.2,
+    "description": "Tüm hayatının aslında bir TV şovu olduğunu fark eden Truman Burbank'in gerçekliği sorguladığı unutulmaz film.",
+    "poster": "https://upload.wikimedia.org/wikipedia/en/c/cd/Trumanshow.jpg",
+    "cast": ["Jim Carrey", "Laura Linney", "Ed Harris"]
+  },
   {
     "id": 2,
     "title": "Interstellar",
@@ -17,7 +18,8 @@
     "category": "Bilim Kurgu",
     "rating": 8.6,
     "description": "İnsanlığın hayatta kalma mücadelesini uzay ve zaman üzerinden anlatan Nolan filmi.",
-    "poster": "https://image.tmdb.org/t/p/original/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg",
+    "cast": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"]
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
     "category": "Aksiyon",
     "rating": 9.0,
     "description": "Batman ve Joker arasındaki kaos mücadelesini anlatan unutulmaz film.",
-    "poster": "https://image.tmdb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+    "cast": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"]
   },
   {
     "id": 4,
@@ -37,7 +40,8 @@
     "category": "Gerilim",
     "rating": 8.6,
     "description": "İki ailenin sınıf çatışmasını çarpıcı bir şekilde anlatan Oscar'lı film.",
-    "poster": "https://image.tmdb.org/t/p/original/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+    "cast": ["Song Kang-ho", "Lee Sun-kyun", "Cho Yeo-jeong"]
   },
   {
     "id": 5,
@@ -47,7 +51,8 @@
     "category": "Animasyon",
     "rating": 8.6,
     "description": "Ruhlar dünyasında kaybolan bir kızın büyüme hikayesi.",
-    "poster": "https://image.tmdb.org/t/p/original/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+    "cast": ["Rumi Hiiragi", "Miyu Irino", "Mari Natsuki"]
   },
   {
     "id": 6,
@@ -57,7 +62,8 @@
     "category": "Drama",
     "rating": 8.8,
     "description": "Modern toplumun tüketim alışkanlıklarına karşı bir başkaldırıyı anlatan kült film.",
-    "poster": "https://image.tmdb.org/t/p/original/bptfVGEQuv6vDTIMVCHjJ9Dz8PX.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/bptfVGEQuv6vDTIMVCHjJ9Dz8PX.jpg",
+    "cast": ["Brad Pitt", "Edward Norton", "Helena Bonham Carter"]
   },
   {
     "id": 7,
@@ -67,7 +73,8 @@
     "category": "Suç",
     "rating": 9.2,
     "description": "Corleone ailesinin suç dünyasındaki yükselişini anlatan efsanevi başyapıt.",
-    "poster": "https://image.tmdb.org/t/p/original/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+    "cast": ["Marlon Brando", "Al Pacino", "James Caan"]
   },
   {
     "id": 8,
@@ -77,7 +84,8 @@
     "category": "Drama",
     "rating": 8.5,
     "description": "Tutkunun ve mükemmeliyetçiliğin tehlikeli sınırlarını anlatan bir müzik filmi.",
-    "poster": "https://image.tmdb.org/t/p/original/oPxnRhyAIzJKGUEdSiwTJQBa3NM.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/oPxnRhyAIzJKGUEdSiwTJQBa3NM.jpg",
+    "cast": ["Miles Teller", "J. K. Simmons", "Paul Reiser"]
   },
   {
     "id": 9,
@@ -87,7 +95,8 @@
     "category": "Bilim Kurgu",
     "rating": 8.0,
     "description": "Uzaylılarla iletişim kurmaya çalışan bir dilbilimcinin hikayesi.",
-    "poster": "https://image.tmdb.org/t/p/original/x2FJsf1ElAgr63Y3PNPtJrcmpoe.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/x2FJsf1ElAgr63Y3PNPtJrcmpoe.jpg",
+    "cast": ["Amy Adams", "Jeremy Renner", "Forest Whitaker"]
   },
   {
     "id": 10,
@@ -97,9 +106,9 @@
     "category": "Müzikal",
     "rating": 8.0,
     "description": "Aşkla hayaller arasında sıkışmış iki insanın müzikal hikayesi.",
-    "poster": "https://image.tmdb.org/t/p/original/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+    "cast": ["Ryan Gosling", "Emma Stone", "John Legend"]
   },
-
   {
     "id": 11,
     "title": "The Matrix",
@@ -108,7 +117,8 @@
     "category": "Bilim Kurgu",
     "rating": 8.7,
     "description": "Gerçeklik ile simülasyon arasındaki çizgiyi sorgulatan kült bilim kurgu.",
-    "poster": "https://image.tmdb.org/t/p/original/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+    "cast": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"]
   },
   {
     "id": 12,
@@ -118,7 +128,8 @@
     "category": "Drama",
     "rating": 8.8,
     "description": "Forrest Gump'ın sıra dışı hayat hikayesini anlatan duygusal bir klasik.",
-    "poster": "https://image.tmdb.org/t/p/original/saHP97rTPS5eLmrLQEcANmKrsFl.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/saHP97rTPS5eLmrLQEcANmKrsFl.jpg",
+    "cast": ["Tom Hanks", "Robin Wright", "Gary Sinise"]
   },
   {
     "id": 13,
@@ -128,7 +139,8 @@
     "category": "Drama",
     "rating": 9.3,
     "description": "Umudun gücünü anlatan tarihin en yüksek puanlı filmlerinden biri.",
-    "poster": "https://image.tmdb.org/t/p/original/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
+    "cast": ["Tim Robbins", "Morgan Freeman", "Bob Gunton"]
   },
   {
     "id": 14,
@@ -138,7 +150,8 @@
     "category": "Aksiyon",
     "rating": 8.5,
     "description": "Roma'nın ihanet ve intikam dolu arenalarında geçen bir destan.",
-    "poster": "https://image.tmdb.org/t/p/original/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
+    "cast": ["Russell Crowe", "Joaquin Phoenix", "Connie Nielsen"]
   },
   {
     "id": 15,
@@ -148,7 +161,8 @@
     "category": "Drama",
     "rating": 8.4,
     "description": "Arthur Fleck'in karanlık dönüşümünü anlatan psikolojik bir karakter çalışması.",
-    "poster": "https://image.tmdb.org/t/p/original/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+    "cast": ["Joaquin Phoenix", "Robert De Niro", "Zazie Beetz"]
   },
   {
     "id": 16,
@@ -158,28 +172,31 @@
     "category": "Gizem",
     "rating": 8.5,
     "description": "İki sihirbaz arasındaki yıkıcı rekabeti konu alan Christopher Nolan filmi.",
-    "poster": "https://m.media-amazon.com/images/I/51oBxmV-dML._AC_.jpg"
+    "poster": "https://m.media-amazon.com/images/I/51oBxmV-dML._AC_.jpg",
+    "cast": ["Christian Bale", "Hugh Jackman", "Scarlett Johansson"]
   },
   {
-  "id": 17,
-  "title": "The Pursuit of Happyness",
-  "type": "film",
-  "year": 2006,
-  "category": "Drama",
-  "rating": 8.0,
-  "description": "Bir babanın oğluyla hayatta kalma ve başarı mücadelesini anlatan ilham verici film.",
-  "poster": "https://upload.wikimedia.org/wikipedia/en/8/81/Poster-pursuithappyness.jpg"
-},
+    "id": 17,
+    "title": "The Pursuit of Happyness",
+    "type": "film",
+    "year": 2006,
+    "category": "Drama",
+    "rating": 8.0,
+    "description": "Bir babanın oğluyla hayatta kalma ve başarı mücadelesini anlatan ilham verici film.",
+    "poster": "https://upload.wikimedia.org/wikipedia/en/8/81/Poster-pursuithappyness.jpg",
+    "cast": ["Will Smith", "Jaden Smith", "Thandiwe Newton"]
+  },
   {
-  "id": 18,
-  "title": "The Wolf of Wall Street",
-  "type": "film",
-  "year": 2013,
-  "category": "Biyografi",
-  "rating": 8.2,
-  "description": "Jordan Belfort'un yükseliş ve çöküş hikâyesini kara mizah ile anlatan film.",
-  "poster": "https://filmhafizasi.com/wp-content/uploads/2014/01/the-wolf-of-wall-street-poster-theatrical.jpg"
-},
+    "id": 18,
+    "title": "The Wolf of Wall Street",
+    "type": "film",
+    "year": 2013,
+    "category": "Biyografi",
+    "rating": 8.2,
+    "description": "Jordan Belfort'un yükseliş ve çöküş hikâyesini kara mizah ile anlatan film.",
+    "poster": "https://filmhafizasi.com/wp-content/uploads/2014/01/the-wolf-of-wall-street-poster-theatrical.jpg",
+    "cast": ["Leonardo DiCaprio", "Jonah Hill", "Margot Robbie"]
+  },
   {
     "id": 19,
     "title": "Coco",
@@ -188,7 +205,8 @@
     "category": "Animasyon",
     "rating": 8.4,
     "description": "Aile bağlarını ve müziğin gücünü işleyen duygusal bir animasyon.",
-    "poster": "https://image.tmdb.org/t/p/original/gGEsBPAijhVUFoiNpgZXqRVWJt2.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/gGEsBPAijhVUFoiNpgZXqRVWJt2.jpg",
+    "cast": ["Anthony Gonzalez", "Gael García Bernal", "Benjamin Bratt"]
   },
   {
     "id": 20,
@@ -198,8 +216,9 @@
     "category": "Romantik",
     "rating": 7.9,
     "description": "Dünyanın en ünlü aşk ve felaket hikayelerinden biri.",
-    "poster": "https://image.tmdb.org/t/p/original/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg"
-  }  ,
+    "poster": "https://image.tmdb.org/t/p/original/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
+    "cast": ["Leonardo DiCaprio", "Kate Winslet", "Billy Zane"]
+  },
   {
     "id": 21,
     "title": "Breaking Bad",
@@ -208,7 +227,8 @@
     "category": "Drama",
     "rating": 9.5,
     "description": "Kanser teşhisi sonrası kimya öğretmeni Walter White'ın uyuşturucu dünyasına girişini anlatan efsane dizi.",
-    "poster": "https://image.tmdb.org/t/p/original/ggFHVNu6YYI5L9pCfOacjizRGt.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/ggFHVNu6YYI5L9pCfOacjizRGt.jpg",
+    "cast": ["Bryan Cranston", "Aaron Paul", "Anna Gunn"]
   },
   {
     "id": 22,
@@ -218,7 +238,8 @@
     "category": "Bilim Kurgu",
     "rating": 8.7,
     "description": "Kayıp bir çocuğu arayan bir kasabada doğaüstü olayların açığa çıkması.",
-    "poster": "https://image.tmdb.org/t/p/original/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg",
+    "cast": ["Millie Bobby Brown", "Finn Wolfhard", "Winona Ryder"]
   },
   {
     "id": 23,
@@ -228,7 +249,8 @@
     "category": "Fantastik",
     "rating": 8.2,
     "description": "Rivyalı Geralt'ın canavar avcılığı ve kaderiyle yüzleştiği karanlık bir dünya.",
-    "poster": "https://image.tmdb.org/t/p/original/zrPpUlehQaBf8YX2NrVrKK8IEpf.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/zrPpUlehQaBf8YX2NrVrKK8IEpf.jpg",
+    "cast": ["Henry Cavill", "Anya Chalotra", "Freya Allan"]
   },
   {
     "id": 24,
@@ -238,7 +260,8 @@
     "category": "Fantastik",
     "rating": 9.2,
     "description": "Demir Taht için verilen destansı mücadele.",
-    "poster": "https://image.tmdb.org/t/p/original/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg",
+    "cast": ["Emilia Clarke", "Kit Harington", "Peter Dinklage"]
   },
   {
     "id": 25,
@@ -248,7 +271,8 @@
     "category": "Gizem",
     "rating": 9.1,
     "description": "Modern dünyada yaşayan Sherlock Holmes ve Dr. Watson'ın maceraları.",
-    "poster": "images/sherlock.png"
+    "poster": "images/sherlock.png",
+    "cast": ["Benedict Cumberbatch", "Martin Freeman", "Una Stubbs"]
   },
   {
     "id": 26,
@@ -258,7 +282,8 @@
     "category": "Bilim Kurgu",
     "rating": 8.7,
     "description": "Galaksinin uzak bölgelerinde yalnız bir kelle avcısının hikayesi.",
-    "poster": "https://image.tmdb.org/t/p/original/sWgBv7LV2PRoQgkxwlibdGXKz1S.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/sWgBv7LV2PRoQgkxwlibdGXKz1S.jpg",
+    "cast": ["Pedro Pascal", "Gina Carano", "Carl Weathers"]
   },
   {
     "id": 27,
@@ -268,7 +293,8 @@
     "category": "Komedi",
     "rating": 8.9,
     "description": "Bir kağıt şirketinin ofisindeki eğlenceli ve absürt günlük hayat.",
-    "poster": "https://image.tmdb.org/t/p/original/qWnJzyZhyy74gjpSjIXWmuk0ifX.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/qWnJzyZhyy74gjpSjIXWmuk0ifX.jpg",
+    "cast": ["Steve Carell", "Rainn Wilson", "John Krasinski"]
   },
   {
     "id": 28,
@@ -278,7 +304,8 @@
     "category": "Bilim Kurgu",
     "rating": 8.8,
     "description": "Teknolojinin karanlık yönlerini anlatan bağımsız bölümlerden oluşan bir antoloji.",
-    "poster": "images/blackmirror.png"
+    "poster": "images/blackmirror.png",
+    "cast": ["Bryce Dallas Howard", "Daniel Kaluuya", "Jesse Plemons"]
   },
   {
     "id": 29,
@@ -288,7 +315,8 @@
     "category": "Komedi",
     "rating": 8.9,
     "description": "New York'ta yaşayan altı yakın arkadaşın eğlenceli ilişkileri.",
-    "poster": "https://image.tmdb.org/t/p/original/f496cm9enuEsZkSPzCwnTESEK5s.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/f496cm9enuEsZkSPzCwnTESEK5s.jpg",
+    "cast": ["Jennifer Aniston", "Courteney Cox", "Matthew Perry"]
   },
   {
     "id": 30,
@@ -298,7 +326,8 @@
     "category": "Suç",
     "rating": 8.8,
     "description": "1920'lerin İngiltere'sinde Shelby ailesinin suç imparatorluğu.",
-    "poster": "https://image.tmdb.org/t/p/original/vUUqzWa2LnHIVqkaKVlVGkVcZIW.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/vUUqzWa2LnHIVqkaKVlVGkVcZIW.jpg",
+    "cast": ["Cillian Murphy", "Paul Anderson", "Helen McCrory"]
   },
   {
     "id": 31,
@@ -308,7 +337,8 @@
     "category": "Drama",
     "rating": 8.6,
     "description": "Kraliçe II. Elizabeth’in hükümdarlık dönemini anlatan dramatik seri.",
-    "poster": "images/thecrown.png"
+    "poster": "images/thecrown.png",
+    "cast": ["Claire Foy", "Olivia Colman", "Imelda Staunton"]
   },
   {
     "id": 32,
@@ -318,7 +348,8 @@
     "category": "Bilim Kurgu",
     "rating": 8.8,
     "description": "Küçük bir kasabada kaybolan çocuk ve zaman paradoksları.",
-    "poster": "images/dark.png"
+    "poster": "images/dark.png",
+    "cast": ["Louis Hofmann", "Lisa Vicari", "Andreas Pietschmann"]
   },
   {
     "id": 33,
@@ -328,7 +359,8 @@
     "category": "Aksiyon",
     "rating": 8.3,
     "description": "Profesör liderliğinde tarihin en büyük soygunu.",
-    "poster": "https://image.tmdb.org/t/p/original/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg",
+    "cast": ["Álvaro Morte", "Úrsula Corberó", "Itziar Ituño"]
   },
   {
     "id": 34,
@@ -338,7 +370,8 @@
     "category": "Drama",
     "rating": 8.7,
     "description": "Yetim bir kızın satranç dahisine dönüşmesi.",
-    "poster": "https://image.tmdb.org/t/p/original/zU0htwkhNvBQdVSIKB9s6hgVeFK.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/zU0htwkhNvBQdVSIKB9s6hgVeFK.jpg",
+    "cast": ["Anya Taylor-Joy", "Thomas Brodie-Sangster", "Marielle Heller"]
   },
   {
     "id": 35,
@@ -348,7 +381,8 @@
     "category": "Komedi",
     "rating": 8.3,
     "description": "Ted'in çocuklarına anneleriyle nasıl tanıştığını anlattığı eğlenceli hikaye.",
-    "poster": "images/howimetyourmother.png"
+    "poster": "images/howimetyourmother.png",
+    "cast": ["Josh Radnor", "Jason Segel", "Cobie Smulders"]
   },
   {
     "id": 36,
@@ -358,7 +392,8 @@
     "category": "Gizem",
     "rating": 8.3,
     "description": "Bir uçak kazasından kurtulanların gizemli bir adada verdiği mücadele.",
-    "poster": "images/lost.png"
+    "poster": "images/lost.png",
+    "cast": ["Matthew Fox", "Evangeline Lilly", "Terry O'Quinn"]
   },
   {
     "id": 37,
@@ -368,7 +403,8 @@
     "category": "Bilim Kurgu",
     "rating": 8.2,
     "description": "Zaman akışını bozduğu için yakalanan Loki’nin TVA ile mücadelesi.",
-    "poster": "https://image.tmdb.org/t/p/original/kEl2t3OhXc3Zb9FBh1AuYzRTgZp.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/kEl2t3OhXc3Zb9FBh1AuYzRTgZp.jpg",
+    "cast": ["Tom Hiddleston", "Owen Wilson", "Sophia Di Martino"]
   },
   {
     "id": 38,
@@ -378,7 +414,8 @@
     "category": "Aksiyon",
     "rating": 8.7,
     "description": "Süper kahramanların karanlık yüzünü ortaya çıkaran bir grup isyancının hikayesi.",
-    "poster": "images/theboys.png"
+    "poster": "images/theboys.png",
+    "cast": ["Karl Urban", "Jack Quaid", "Antony Starr"]
   },
   {
     "id": 39,
@@ -388,7 +425,8 @@
     "category": "Tarih",
     "rating": 8.5,
     "description": "Efsanevi Ragnar Lothbrok'un destansı hayatı.",
-    "poster": "https://image.tmdb.org/t/p/original/aq2yEMgRQBPfRkrO0Repo2qhUAT.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/aq2yEMgRQBPfRkrO0Repo2qhUAT.jpg",
+    "cast": ["Travis Fimmel", "Katheryn Winnick", "Clive Standen"]
   },
   {
     "id": 40,
@@ -398,9 +436,11 @@
     "category": "Drama",
     "rating": 9.2,
     "description": "Kıyamet sonrası dünyada Joel ve Ellie’nin yolculuğu.",
-    "poster": "https://image.tmdb.org/t/p/original/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg"
+    "poster": "https://image.tmdb.org/t/p/original/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg",
+    "cast": ["Pedro Pascal", "Bella Ramsey", "Gabriel Luna"]
   },
-    {
+
+  {
     "id": 41,
     "title": "1984",
     "type": "kitap",
@@ -408,7 +448,8 @@
     "category": "Distopya",
     "rating": 9.0,
     "description": "Büyük Birader’in gözetimindeki karanlık bir gelecek tasviri.",
-    "poster": "images/1984.jpg"
+    "poster": "images/1984.jpg",
+    "author": "George Orwell"
   },
   {
     "id": 42,
@@ -418,7 +459,8 @@
     "category": "Klasik",
     "rating": 9.1,
     "description": "Raskolnikov’un işlediği cinayet sonrası vicdanıyla hesaplaşması.",
-    "poster": "images/sucveceza.jpg"
+    "poster": "images/sucveceza.jpg",
+    "author": "Fyodor Dostoyevski"
   },
   {
     "id": 43,
@@ -428,7 +470,8 @@
     "category": "Klasik",
     "rating": 9.0,
     "description": "Jean Valjean’ın adalet, merhamet ve insanlık mücadelesi.",
-    "poster": "images/sefiller.png"
+    "poster": "images/sefiller.png",
+    "author": "Victor Hugo"
   },
   {
     "id": 44,
@@ -438,7 +481,8 @@
     "category": "Bilim Kurgu",
     "rating": 9.0,
     "description": "Arrakis gezegeninde geçen, siyaset ve dinle harmanlanmış epik bir hikâye.",
-    "poster": "https://covers.openlibrary.org/b/id/15092781-L.jpg"
+    "poster": "https://covers.openlibrary.org/b/id/15092781-L.jpg",
+    "author": "Frank Herbert"
   },
   {
     "id": 45,
@@ -448,7 +492,8 @@
     "category": "Fantastik",
     "rating": 9.5,
     "description": "Tek Yüzük’ü yok etmek için verilen Orta Dünya yolculuğu.",
-    "poster": "https://covers.openlibrary.org/b/isbn/9780261103252-L.jpg"
+    "poster": "https://covers.openlibrary.org/b/isbn/9780261103252-L.jpg",
+    "author": "J. R. R. Tolkien"
   },
   {
     "id": 46,
@@ -458,7 +503,8 @@
     "category": "Felsefi",
     "rating": 8.4,
     "description": "Santiago’nun kişisel menkıbesini aradığı sembolik yolculuk.",
-    "poster": "images/simyaci.png"
+    "poster": "images/simyaci.png",
+    "author": "Paulo Coelho"
   },
   {
     "id": 47,
@@ -468,7 +514,8 @@
     "category": "Drama",
     "rating": 8.9,
     "description": "Dostluk, ihanet ve vicdan azabı üzerine Afganistan’dan dokunaklı bir hikâye.",
-    "poster": "https://covers.openlibrary.org/b/isbn/9781594480003-L.jpg"
+    "poster": "https://covers.openlibrary.org/b/isbn/9781594480003-L.jpg",
+    "author": "Khaled Hosseini"
   },
   {
     "id": 48,
@@ -478,7 +525,8 @@
     "category": "Masal",
     "rating": 9.2,
     "description": "Çocuklara yazılmış gibi görünen ama büyükleri sorgulatan filozofik bir masal.",
-    "poster": "https://upload.wikimedia.org/wikipedia/en/0/05/Littleprince.JPG"
+    "poster": "https://upload.wikimedia.org/wikipedia/en/0/05/Littleprince.JPG",
+    "author": "Antoine de Saint-Exupéry"
   },
   {
     "id": 49,
@@ -488,7 +536,8 @@
     "category": "Siyasi Mizah",
     "rating": 8.8,
     "description": "Bir çiftlik üzerinden totaliter rejimlere getirilen siyasi taşlama.",
-    "poster": "https://covers.openlibrary.org/b/isbn/9780451526342-L.jpg"
+    "poster": "https://covers.openlibrary.org/b/isbn/9780451526342-L.jpg",
+    "author": "George Orwell"
   },
   {
     "id": 50,
@@ -498,7 +547,8 @@
     "category": "Psikolojik",
     "rating": 8.7,
     "description": "Bir gemide satranç üzerinden iki farklı zihnin çatışması.",
-    "poster": "images/satranc.png"
+    "poster": "images/satranc.png",
+    "author": "Stefan Zweig"
   },
   {
     "id": 51,
@@ -508,7 +558,8 @@
     "category": "Modern Türk Edebiyatı",
     "rating": 8.5,
     "description": "Hayata uyum sağlayamayan bireylerin iç dünyasını anlatan Oğuz Atay klasiği.",
-    "poster": "https://covers.openlibrary.org/b/id/14857564-L.jpg"
+    "poster": "https://covers.openlibrary.org/b/id/14857564-L.jpg",
+    "author": "Oğuz Atay"
   },
   {
     "id": 52,
@@ -518,7 +569,8 @@
     "category": "Distopya",
     "rating": 8.9,
     "description": "Bir şehirde aniden başlayan körlük salgınıyla çöken düzenin hikâyesi.",
-    "poster": "images/korluk.png"
+    "poster": "images/korluk.png",
+    "author": "José Saramago"
   },
   {
     "id": 53,
@@ -528,7 +580,8 @@
     "category": "Drama",
     "rating": 8.8,
     "description": "Yoksul bir ailede büyüyen küçük Zezé’nin iç dünyasını anlatan duygusal roman.",
-    "poster": "https://covers.openlibrary.org/b/id/10950908-L.jpg"
+    "poster": "https://covers.openlibrary.org/b/id/10950908-L.jpg",
+    "author": "José Mauro de Vasconcelos"
   },
   {
     "id": 54,
@@ -538,7 +591,8 @@
     "category": "Absürd",
     "rating": 8.6,
     "description": "Bir sabah dev bir böceğe dönüşen Gregor Samsa’nın dışlanma hikâyesi.",
-    "poster": "images/donusum.png"
+    "poster": "images/donusum.png",
+    "author": "Franz Kafka"
   },
   {
     "id": 55,
@@ -548,7 +602,8 @@
     "category": "Romantik",
     "rating": 8.4,
     "description": "Petersburg’un beyaz gecelerinde geçen kısa ama unutulmaz bir aşk hikâyesi.",
-    "poster": "https://covers.openlibrary.org/b/id/12213069-L.jpg"
+    "poster": "https://covers.openlibrary.org/b/id/12213069-L.jpg",
+    "author": "Fyodor Dostoyevski"
   },
   {
     "id": 56,
@@ -558,7 +613,8 @@
     "category": "Distopya",
     "rating": 8.7,
     "description": "Kitapların yakıldığı ve düşünmenin suç olduğu karanlık bir gelecek.",
-    "poster": "https://covers.openlibrary.org/b/isbn/9781451673319-L.jpg"
+    "poster": "https://covers.openlibrary.org/b/isbn/9781451673319-L.jpg",
+    "author": "Ray Bradbury"
   },
   {
     "id": 57,
@@ -568,7 +624,8 @@
     "category": "Drama",
     "rating": 8.3,
     "description": "İdam cezasına çarptırılmış bir mahkumun son günlerindeki iç hesaplaşması.",
-    "poster": "images/biridammahkumununsongunu.png"
+    "poster": "images/biridammahkumununsongunu.png",
+    "author": "Victor Hugo"
   },
   {
     "id": 58,
@@ -578,7 +635,8 @@
     "category": "Drama",
     "rating": 8.6,
     "description": "İşçi sınıfından bir gencin yazar olup sınıf atlama çabası.",
-    "poster": "https://covers.openlibrary.org/b/id/14634323-L.jpg"
+    "poster": "https://covers.openlibrary.org/b/id/14634323-L.jpg",
+    "author": "Jack London"
   },
   {
     "id": 59,
@@ -588,7 +646,8 @@
     "category": "Varoluşçu",
     "rating": 8.4,
     "description": "Meursault karakteri üzerinden hayatın anlamsızlığını sorgulayan Albert Camus romanı.",
-    "poster": "https://covers.openlibrary.org/b/isbn/9780679720201-L.jpg"
+    "poster": "https://covers.openlibrary.org/b/isbn/9780679720201-L.jpg",
+    "author": "Albert Camus"
   },
   {
     "id": 60,
@@ -598,8 +657,7 @@
     "category": "Klasik",
     "rating": 8.7,
     "description": "Hayal ile gerçek arasındaki çizgide dolaşan efsanevi şövalye hikâyesi.",
-    "poster": "https://covers.openlibrary.org/b/isbn/9780060934347-L.jpg"
+    "poster": "https://covers.openlibrary.org/b/isbn/9780060934347-L.jpg",
+    "author": "Miguel de Cervantes"
   }
 ]
-
-
