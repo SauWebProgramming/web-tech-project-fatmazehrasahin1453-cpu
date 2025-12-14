@@ -157,7 +157,7 @@ main {
   border-color: #fbbf24;
 }
 
-/* -------------------- DETAY PANELİ (TEK TANIM) -------------------- */
+/* -------------------- DETAY PANELİ -------------------- */
 #detailPanel {
   background: #020617;
   border-radius: 0.75rem;
@@ -237,7 +237,7 @@ footer {
   #detailPanel {
     order: 2;
     margin-top: 1rem;
-    position: static;   /* mobilde sticky olmasın */
+    position: static;
     max-height: none;
   }
 
@@ -258,7 +258,7 @@ footer {
   }
 }
 
-/* Mobil dokunma efekti (desktop hover'ını bozmaz) */
+/* Mobil dokunma efekti */
 @media (hover: none) and (pointer: coarse) {
   .media-card:active {
     transform: scale(0.97);

@@ -53,7 +53,7 @@ const getFilteredMedia = () => {
     // Tür filtresi
     if (typeValue !== "all" && item.type !== typeValue) return false;
 
-    // Yıl filtresi (2000 ve sonrası, 2010 ve sonrası, 2020 ve sonrası)
+    // Yıl filtresi
     if (yearValue !== "all" && item.year < Number(yearValue)) return false;
 
     return true;
@@ -127,7 +127,7 @@ const renderMediaList = () => {
   });
 };
 
-// Sağdaki detay panelini güncelle (YENİ: cast + author)
+// Sağdaki detay panelini güncelle (cast + author)
 const renderDetail = (item) => {
   const castHtml =
     Array.isArray(item.cast) && item.cast.length
@@ -198,7 +198,7 @@ yearFilterEl.addEventListener("change", () => {
   renderMediaList();
 });
 
-// Favoriler butonu: sadece favorileri göster / hepsini göster
+// Favoriler butonu
 favoritesToggleEl.addEventListener("click", () => {
   showingFavoritesOnly = !showingFavoritesOnly;
   favoritesToggleEl.textContent = showingFavoritesOnly
@@ -207,7 +207,7 @@ favoritesToggleEl.addEventListener("click", () => {
   renderMediaList();
 });
 
-// Filtreleri Sıfırla butonu
+// Filtreleri Sıfırla
 resetFiltersEl.addEventListener("click", () => {
   searchInputEl.value = "";
   typeFilterEl.value = "all";
