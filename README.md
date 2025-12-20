@@ -25,7 +25,7 @@ Kullanıcılar:
 ##  Canlı Demo
  GitHub Pages: https://sauwebprogramming.github.io/web-tech-project-fatmazehrasahin1453-cpu/
 
-## 📁 Veri Kaynağı
+## Veri Kaynağı
 Veriler, proje dizininde bulunan `media.json` dosyasından
 fetch API kullanılarak asenkron biçimde alınmaktadır.
 
